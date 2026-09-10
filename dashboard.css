@@ -1,0 +1,698 @@
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background-color: #080d25;
+color: white;
+}
+
+/* ================= HEADER ================= */
+
+header {
+min-height: 75px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+padding: 12px 6%;
+
+background-color: #151827;
+
+border-bottom: 1px solid #24558A;
+
+}
+
+.brand {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.logo {
+width: 42px;
+height: 42px;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+background-color: #22D3EE;
+
+color: #11131d;
+
+border-radius: 10px;
+
+font-size: 15px;
+font-weight: bold;
+
+}
+
+.brand-name {
+font-size: 20px;
+font-weight: bold;
+}
+
+.brand-name span {
+color: #22D3EE;
+}
+
+/* ================= HEADER STATS ================= */
+
+.header-stats {
+display: flex;
+
+align-items: center;
+
+gap: 22px;
+
+margin-left: auto;
+margin-right: 25px;
+
+}
+
+.header-stat {
+text-align: center;
+}
+
+.header-stat strong {
+display: block;
+
+color: #22D3EE;
+
+font-size: 18px;
+
+}
+
+.header-stat span {
+color: #94A3B8;
+
+font-size: 9px;
+
+text-transform: uppercase;
+
+}
+
+/* ================= LOGOUT ================= */
+
+.logout {
+color: #94A3B8;
+
+text-decoration: none;
+
+font-size: 14px;
+
+padding: 8px 12px;
+
+border: 1px solid #24558A;
+
+border-radius: 7px;
+
+}
+
+.logout:hover {
+color: #22D3EE;
+
+border-color: #22D3EE;
+
+}
+
+/* ================= MAIN ================= */
+
+main {
+width: 88%;
+max-width: 1200px;
+
+margin: auto;
+
+padding: 35px 0 60px;
+
+}
+
+/* ================= COLLECTION HEADER ================= */
+
+.collection-header {
+display: flex;
+
+align-items: center;
+justify-content: space-between;
+
+gap: 25px;
+
+margin-bottom: 22px;
+
+}
+
+.collection-title {
+padding-left: 15px;
+
+border-left: 3px solid #22D3EE;
+
+}
+
+.collection-title h1 {
+margin: 0 0 6px;
+
+font-size: 27px;
+
+}
+
+.collection-title p {
+margin: 0;
+
+color: #94A3B8;
+
+font-size: 13px;
+
+}
+
+/* ================= ACTIONS ================= */
+
+.actions {
+display: flex;
+gap: 10px;
+}
+
+/* ================= SEARCH ================= */
+
+.search {
+width: 280px;
+
+padding: 12px 15px;
+
+background-color: #292c3a;
+
+color: white;
+
+border: 1px solid #24558A;
+
+border-radius: 8px;
+
+outline: none;
+
+}
+
+.search::placeholder {
+color: #64748B;
+}
+
+.search:focus {
+
+box-shadow: 0 0 0 2px #164F61;
+
+}
+
+/* ================= ADD BUTTON ================= */
+
+.add-button {
+padding: 12px 18px;
+
+background-color: #22D3EE;
+
+color: #11131d;
+
+border: none;
+
+border-radius: 8px;
+
+font-size: 13px;
+
+font-weight: bold;
+
+cursor: pointer;
+
+white-space: nowrap;
+
+}
+
+.add-button:hover {
+background-color: #67E8F9;
+}
+
+/* ================= COLLECTION CONTAINER ================= */
+
+.collection-container {
+
+padding: 22px;
+
+background-color: #10162A;
+
+border: 1px solid #263B5A;
+
+border-radius: 16px;
+
+box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ================= MOVIE GRID ================= */
+
+.movie-grid {
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+gap: 18px;
+
+}
+
+/* ================= MOVIE CARD ================= */
+
+.movie-card {
+display: flex;
+
+gap: 15px;
+
+min-height: 190px;
+
+padding: 15px;
+
+background-color: #171c2d;
+
+border: 1px solid #3B506D;
+
+border-radius: 12px;
+
+position: relative;
+
+transition: 0.2s;
+
+}
+
+.movie-card:hover {
+border-color: #22D3EE;
+
+box-shadow: 0 0 0 1px #164F61;
+
+}
+
+/* ================= POSTER ================= */
+
+.poster {
+width: 125px;
+
+min-width: 125px;
+
+height: 160px;
+
+background-color: #18243A;
+
+border: 1px solid #45658A;
+
+border-radius: 8px;
+
+position: relative;
+
+overflow: hidden;
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ================= POSTER DESIGN ================= */
+
+.poster-action {
+background:
+linear-gradient(
+145deg,
+#173B58 0%,
+#0D233D 45%,
+#102C36 100%
+);
+}
+
+.poster-drama {
+background:
+linear-gradient(
+125deg,
+#30213F 0%,
+#171B36 50%,
+#102C46 100%
+);
+}
+
+.poster-scifi {
+background:
+linear-gradient(
+160deg,
+#123C49 0%,
+#101D3A 48%,
+#20315B 100%
+);
+}
+
+.poster-comedy {
+background:
+linear-gradient(
+135deg,
+#3A3030 0%,
+#18233D 48%,
+#123847 100%
+);
+}
+
+.poster-horror {
+background:
+linear-gradient(
+150deg,
+#321D2B 0%,
+#11182F 50%,
+#162D3B 100%
+);
+}
+
+.poster-adventure {
+background:
+linear-gradient(
+115deg,
+#163D36 0%,
+#102238 48%,
+#173E52 100%
+);
+}
+
+/* ================= POSTER SHAPES ================= */
+
+.poster::before {
+content: "";
+
+position: absolute;
+
+width: 125px;
+height: 125px;
+
+top: 25px;
+left: -25px;
+
+border-radius: 50%;
+
+background:
+    radial-gradient(
+        circle,
+        rgba(34, 211, 238, 0.20) 0%,
+        rgba(34, 211, 238, 0.08) 35%,
+        transparent 68%
+    );
+
+opacity: 0.9;
+
+}
+
+.poster::after {
+content: "";
+
+position: absolute;
+
+width: 90px;
+height: 130px;
+
+right: -35px;
+bottom: -50px;
+
+background-color: #24558A;
+
+transform: rotate(25deg);
+
+opacity: 0.28;
+
+border-radius: 10px;
+
+}
+
+/* ================= POSTER ICON ================= */
+
+.poster-icon {
+position: relative;
+
+z-index: 2;
+
+font-size: 40px;
+
+color: #22D3EE;
+
+opacity: 0.95;
+
+text-shadow:
+    0 0 15px rgba(34, 211, 238, 0.25);
+
+}
+
+/* ================= POSTER RATING ================= */
+
+.poster-rating {
+position: absolute;
+
+bottom: 8px;
+left: 8px;
+
+z-index: 4;
+
+padding: 4px 7px;
+
+background-color: rgba(8, 13, 37, 0.88);
+
+color: #22D3EE;
+
+border: 1px solid rgba(69, 101, 138, 0.9);
+
+border-radius: 5px;
+
+font-size: 9px;
+
+font-weight: bold;
+
+box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ================= POSTER RUNTIME ================= */
+
+.poster-runtime {
+position: absolute;
+
+bottom: 8px;
+right: 8px;
+
+z-index: 4;
+
+padding: 4px 7px;
+
+background-color: rgba(8, 13, 37, 0.88);
+
+color: #CBD5E1;
+
+border: 1px solid rgba(69, 101, 138, 0.9);
+
+border-radius: 5px;
+
+font-size: 8px;
+
+font-weight: bold;
+
+box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ================= MOVIE INFO ================= */
+
+.movie-info {
+padding: 5px 3px;
+
+flex: 1;
+
+display: flex;
+
+flex-direction: column;
+
+justify-content: center;
+
+min-width: 0;
+
+}
+
+.movie-info h3 {
+margin: 0 0 7px;
+
+font-size: 17px;
+
+line-height: 1.3;
+
+}
+
+.movie-info p {
+margin: 0 0 15px;
+
+color: #A8B4C7;
+
+font-size: 12px;
+
+}
+
+/* ================= STATUS ================= */
+
+.status {
+display: inline-block;
+
+width: fit-content;
+
+padding: 5px 9px;
+
+border-radius: 20px;
+
+font-size: 9px;
+
+font-weight: bold;
+
+margin-top: auto;
+
+}
+
+.watched {
+background-color: #164F61;
+
+color: #22D3EE;
+
+border: 1px solid #22D3EE;
+
+}
+
+.to-watch {
+background-color: #202638;
+
+color: #A8B4C7;
+
+border: 1px solid #64748B;
+
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width: 900px) {
+
+header {
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.header-stats {
+    order: 3;
+
+    width: 100%;
+
+    justify-content: center;
+
+    margin: 5px 0 0;
+}
+
+.movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 650px) {
+
+header {
+    padding: 12px 4%;
+}
+
+.brand-name {
+    font-size: 17px;
+}
+
+.header-stats {
+    gap: 18px;
+}
+
+.logout {
+    font-size: 12px;
+    padding: 7px 9px;
+}
+
+main {
+    width: 92%;
+    padding-top: 28px;
+}
+
+.collection-header {
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.actions {
+    width: 100%;
+    flex-direction: column;
+}
+
+.search {
+    width: 100%;
+}
+
+.add-button {
+    width: 100%;
+}
+
+.collection-container {
+    padding: 14px;
+    border-radius: 12px;
+}
+
+.movie-grid {
+    grid-template-columns: 1fr;
+}
+
+}
+
+/* ================= SMALL PHONE ================= */
+
+@media (max-width: 400px) {
+
+.movie-card {
+    min-height: 175px;
+    padding: 12px;
+}
+
+.poster {
+    width: 105px;
+    min-width: 105px;
+    height: 145px;
+}
+
+.movie-info h3 {
+    font-size: 15px;
+}
+
+.poster-icon {
+    font-size: 34px;
+}
+
+.featured {
+    top: 7px;
+    right: 7px;
+    padding: 4px 6px;
+    font-size: 7px;
+}
+
+.poster-rating,
+.poster-runtime {
+    bottom: 7px;
+    padding: 3px 5px;
+    font-size: 7px;
+}
+
+}
